@@ -1,0 +1,100 @@
+@font-face {
+    font-family: Poppins-Medium;
+    src: url(./Poppins-Medium.otf);
+}
+*{
+ padding:0 ;
+ margin:0 ;
+ box-sizing: border-box;
+
+}
+body{
+    font-family: 'poppins-medium';
+    background-color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.container{
+    background-color: #f9faf9;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    width: 400px;
+
+}
+.container h1{
+    text-align: center;
+    text-transform: capitalize;
+    margin: 50px;
+}
+.form{
+    padding: 30px 40px;
+}
+.form-contol{
+
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    position: relative;
+}
+.form-contol label{
+    display: block;
+    margin-bottom: 5px;
+
+
+}
+.form-contol input{
+    width: 100%;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: 1px solid #a7a1a0;
+}
+.form-contol input:focus{
+    outline: none;
+    border: 1px solid #1d1a1a;
+}
+.form-contol i.fa-check{
+    position: absolute;
+    text-align: right;
+    color: #3aca15;
+    top: 35px;
+    bottom: 0;
+    right: 10px;
+    visibility: hidden;
+}
+.form-contol i.fa-close{
+    position: absolute;
+    text-align: right;
+    color: #ec5a36;
+    top: 35px;
+    bottom: 0;
+    right: 10px;
+    visibility: hidden;
+}
+.form-contol small{
+    display: block;
+    color: #ec5a36;
+    visibility: hidden;
+
+}
+.btn{
+  width: 100%;
+  padding: 10px 20px ;
+   background-color: #ff7e33;
+   border: 2px solid #ff7e33;
+   color: #fff;
+   font-size: 14px;
+   cursor: pointer;
+   border-radius: 4px;
+   display: block;
+   outline: none;
+}
+.form-contol.success input{
+    border: 1px solid #3aca15;
+}
+.form-contol.error input{
+    border: 1px solid #ec5a36;
+}
+.form-contol.error small{
+    visibility: visible;
+}
